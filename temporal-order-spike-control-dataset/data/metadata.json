@@ -1,0 +1,40 @@
+{
+  "name": "temporal_order_spike_dataset",
+  "description": " A Binary spike classification dataset where classes differ only by temporal order.",
+  "shape": {
+    "X_train": [
+      1000,
+      300,
+      60
+    ],
+    "y_train": [
+      1000
+    ],
+    "X_test": [
+      300,
+      300,
+      60
+    ],
+    "y_test": [
+      300
+    ]
+  },
+  "parameters": {
+    "seed": 7,
+    "n_neurons": 60,
+    "time_steps": 300,
+    "n_windows": 3,
+    "spikes_per_neuron": 3,
+    "noise_spikes_per_sample": 30
+  },
+  "patterns": {
+    "A": "neurons 0-19",
+    "B": "neurons 20-39",
+    "C": "neurons 40-59"
+  },
+  "classes": {
+    "0": "A -> B -> C",
+    "1": "C -> B -> A"
+  },
+  "controlled_property": "Temporal order of spike patterns"
+}
