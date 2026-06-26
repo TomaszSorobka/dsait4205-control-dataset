@@ -1,0 +1,28 @@
+{
+  "spike_counts": {
+    "train": {
+      "class_0": {
+        "mean": 210.0,
+        "std": 0.0
+      },
+      "class_1": {
+        "mean": 210.0,
+        "std": 0.0
+      }
+    },
+    "test": {
+      "class_0": {
+        "mean": 210.0,
+        "std": 0.0
+      },
+      "class_1": {
+        "mean": 210.0,
+        "std": 0.0
+      }
+    }
+  },
+  "accuracy": {
+    "time_ignoring_baseline": 0.523,
+    "window_based_baseline": 1.0
+  }
+}

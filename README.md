@@ -18,6 +18,7 @@ This means that the class cannot be identified just by checking which patterns a
 pip install -r requirements.txt
 python generate_dataset.py
 python plot_examples.py
+python sanity_test.py
 ````
 
 ## Files
@@ -25,6 +26,7 @@ python plot_examples.py
 ```text
 generate_dataset.py            generates the dataset
 plot_examples.py               creates example spike plots
+sanity_test.py                 runs two baseline classifiers and saves results to data/sanity_results.json
 
 data/
   temporal_order_dataset.npz   train and test arrays
